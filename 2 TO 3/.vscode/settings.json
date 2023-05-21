@@ -39,6 +39,8 @@
     "string": "cpp",
     "vector": "cpp",
     "iostream": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "initializer_list": "cpp",
+    "valarray": "cpp"
   }
 }

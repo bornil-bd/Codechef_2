@@ -55,28 +55,46 @@ typedef unsigned long long int ull;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    ii(a)
+    ll a,b,c;
+    cin>>a>>b>>c;
+    ll count=0;
+    map<ll,ll,greater<ll>>mp;
+    unordered_map<ll,ll>mp2;
     vll vc;
-    unordered_map<ll,ll>mp;
-    loop(i,0,a)
+    loop(i,1,a+1)
     {
         ii(x)
-        mp[x]++;
+        mp[x]=i;
     }
-    if(a<3)
+    for(auto m:mp)
     {
-        cout<<"0"<<v;
-        return;
+        if(m.ff>=b)
+        {
+            count++;
+            vc.pb(m.ss);
+            mp2[m.ff]++;
+        }
     }
-    ll maxx=INT_MIN;
-    for(auto d:mp)
+    if(count<c)
     {
-        maxx=max(d.ss,maxx);
+        for(auto x:mp)
+        {
+            if(mp2.find(x.ff)==mp2.end())
+            {
+                vc.pb(x.ss);
+                count++;
+            }
+            if(count==c) break;
+        }
     }
-    if(maxx==1) maxx=2;
-    cout<<a-maxx<<v;
+    cout<<count<<" ";
+    sort(all(vc));
+    for(auto xx:vc)
+    {
+        cout<<xx<<" ";
+    }
+    cout<<v;
     
-
     //cout<<"Case "<<tc<<": "<<
 }
 

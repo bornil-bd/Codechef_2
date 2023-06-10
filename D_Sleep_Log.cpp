@@ -55,15 +55,43 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a)
+    ll box[a];
+    loop(i,0,a) cin>>box[i];
+    ll tab[box[a-1]];
+    loop(i,0,box[a-1])
+    {
+        tab[i]=1;
+    }
+    //cout<<tab[2]<<v;
+    for(ll i=1; i<a; i=i+2)
+    {
+        for(ll j=box[i]-1; j>=box[i-1]; j--)
+        {
+            tab[j]=0;
+        }
+    }
+    ll ans[box[a-1]],sum=0;
+    loop(i,0,box[a-1])
+    {
+        sum+=tab[i];
+        ans[i]=sum;
+    }
+    ii(b)
+    while(b--)
+    {
+        ii(aa) ii(cc)
+        //cout<<ans[cc]<<" "<<ans[aa]<<v;
+        cout<<ans[cc-1]-ans[aa]+tab[aa]<<v;
+    }
     //cout<<"Case "<<tc<<": "<<
 }
 
 int main()
 {
     fastio();
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     ll tc=0;
     while(t--)
     {

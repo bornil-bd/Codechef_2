@@ -25,13 +25,13 @@ typedef unsigned long long int ull;
 #define ee              end()
 #define all(x)          (x).begin(), (x).end()
 #define loop(a,b,c)     for(ull(a)=(b); (a)<(c); (a)++)
+#define M               1000000007
 #define maxall(a)       (*max_element(all(a)))
 #define minall(a)       (*min_element(all(a)))
 #define invec(a,n)      loop(i,0,n){ii(x) a.pb(x);}
 #define inmap(mp,n)     loop(i,0,n){ii(x) mp[x]++;}
 #define upperb(a,b)     upper_bound(all(a),b)-a.bb
 #define lowerb(a,b)     lower_bound(all(a),b)-a.bb
-ll M=1000000007;
 //#define test()        ull t;cin>>t;while(t--)
 // ll modinv(ll p,ll q)
 // {
@@ -55,7 +55,9 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a) ii(b)
+    ll c=labs(a-b);
+    (c & 1) ? no : yes;
     //cout<<"Case "<<tc<<": "<<
 }
 

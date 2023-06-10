@@ -55,15 +55,30 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    char a,b;
+    cin>>a>>b;
+    unordered_map<ll,ll>mp;
+    mp[1]=0;
+    mp[2]=3;
+    mp[3]=4;
+    mp[4]=8;
+    mp[5]=9;
+    mp[6]=14;
+    mp[7]=23;
+    ll c=a-64;
+    ll d=b-64;
+    ll ans=labs(mp[c]-mp[d]);
+    cout<<ans<<v;
+
+
     //cout<<"Case "<<tc<<": "<<
 }
 
 int main()
 {
     fastio();
-    ll t;
-    cin>>t;
+    ll t=1;
+   // cin>>t;
     ll tc=0;
     while(t--)
     {

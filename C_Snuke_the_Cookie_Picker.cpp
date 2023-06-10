@@ -55,15 +55,65 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a) ii(b)
+    char box[a][b];
+    loop(i,0,a)
+    {
+        loop(j,0,b)
+        {
+            cin>>box[i][j];
+        }
+    }
+    if(box[0][0]=='.' && box[0][1]=='#' && box[1][0]=='#')
+    {
+        cout<<"1 1"<<v;
+        return;
+    }
+    if(box[0][b-1]=='.' && box[0][b-2]=='#' && box[1][b-1]=='#')
+    {
+        cout<<"1 "<<b<<v;
+        return;
+    }
+    if(box[a-1][0]=='.' && box[a-1][1]=='#' && box[a-2][0]=='#')
+    {
+        cout<<a<<" 1"<<v;
+        return;
+    }
+    if(box[a-1][b-1]=='.' && box[a-1][b-2]=='#' && box[a-2][b-1]=='#')
+    {
+        cout<<a<<" "<<b<<v;
+        return;
+    }
+    loop(i,0,a)
+    {
+        loop(j,0,b)
+        {
+            if(box[i][j]=='.')
+            {
+                if(box[i][j-1]=='#' && box[i][j+1]=='#')
+                {
+                    cout<<i+1<<" "<<j+1<<v;
+                    return;
+                }
+                if(box[i][j-1]=='#' || box[i][j+1]=='#')
+                {
+                    if(box[i+1][j]=='#' || box[i-1][j]=='#')
+                    {
+                        cout<<i+1<<" "<<j+1<<v;
+                        return;
+                    }
+                }
+            }
+        }
+    }
     //cout<<"Case "<<tc<<": "<<
 }
 
 int main()
 {
     fastio();
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     ll tc=0;
     while(t--)
     {

@@ -55,15 +55,19 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a)
+    ll b=a%5;
+    if(b<3) a=a-(b);
+    else a=a+(5-b);
+    cout<<a<<v;
     //cout<<"Case "<<tc<<": "<<
 }
 
 int main()
 {
     fastio();
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     ll tc=0;
     while(t--)
     {

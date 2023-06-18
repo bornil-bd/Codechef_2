@@ -55,7 +55,32 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a)
+    vll b,c;
+    invec(b,a)
+    invec(c,a)
+    ll maxom=INT_MIN, maxad=INT_MIN,cntom=0,cntad=0;
+    loop(i,0,a)
+    {
+        if(b[i]>0)
+        {
+            cntom++;
+        }
+        else cntom=0;
+        maxom=max(maxom,cntom);
+    }
+    loop(i,0,a)
+    {
+        if(c[i]>0)
+        {
+            cntad++;
+        }
+        else cntad=0;
+        maxad=max(maxad,cntad);
+    }
+    if(maxom>maxad) cout<<"Om"<<v;
+    else if(maxom<maxad) cout<<"Addy"<<v;
+    else cout<<"Draw"<<v;
     //cout<<"Case "<<tc<<": "<<
 }
 
@@ -73,12 +98,3 @@ int main()
     }
     return 0;
 }
-
-/*==========================================================================
-				██████╗  █████╗ ██████╗ ███╗  ██╗██╗██╗
-				██╔══██╗██╔══██╗██╔══██╗████╗ ██║██║██║
-				██████╦╝██║  ██║██████╔╝██╔██╗██║██║██║
-				██╔══██╗██║  ██║██╔══██╗██║╚████║██║██║
-				██████╦╝╚█████╔╝██║  ██║██║ ╚███║██║███████╗
-				╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚══╝╚═╝╚══════╝
-==========================================================================*/

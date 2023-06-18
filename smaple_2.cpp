@@ -1,6 +1,3 @@
-//  b0rnil
-//  use my code freely :)
-
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int   ll;

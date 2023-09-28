@@ -52,7 +52,35 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a)
+    vll b,c;
+    invec(b,a)
+    invec(c,a-1)
+    sort(all(b));
+    sort(all(c));
+    unordered_map<ll,ll>ans;
+    loop(i,0,a-1)
+    {
+        ll xx=c[i]-b[i];
+        ll xy=c[i]-b[i+1];
+        if(xx!=xy)
+        {
+            if(xx>0) ans[xx]++;
+            if(xy>0) ans[xy]++;
+        }
+        else
+        {
+            if(xx>0) ans[xx]++;
+        }
+    }
+    for(auto x:ans)
+    {
+        if(x.ss==a-1)
+        {
+            cout<<x.ff<<v;
+            break;
+        }
+    }
     //cout<<"Case "<<tc<<": "<<
 }
 

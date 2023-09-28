@@ -52,7 +52,20 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a) ii(b) ii(c)
+    vll d,e;
+    invec(d,a);
+    invec(e,b);
+    sort(all(d),greater<ll>());
+    sort(all(e),greater<ll>());
+    ll tot=0;
+    loop(i,0,min(sz(d),sz(e)))
+    {
+        ll power=e[i]*c;
+        if(power>d[i]) power=d[i];
+        tot+=power;
+    }
+    cout<<tot<<v;
     //cout<<"Case "<<tc<<": "<<
 }
 

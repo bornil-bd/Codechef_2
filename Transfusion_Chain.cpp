@@ -52,7 +52,28 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a)
+    //vector<string>vc;
+    unordered_map<string,ll>mp;
+    mp["A"]=0;
+    mp["B"]=0;
+    mp["O"]=0;
+    mp["AB"]=0;
+    loop(i,0,a)
+    {
+        string s;
+        cin>>s;
+        if(s=="A") mp["A"]++;
+        if(s=="B") mp["B"]++;
+        if(s=="AB")
+        {
+            mp["A"]++;
+            mp["B"]++;
+        }
+        if(s=="O") mp["O"]++;
+    }
+    cout<<max(mp["A"],mp["B"])+mp["O"]<<v;
+
     //cout<<"Case "<<tc<<": "<<
 }
 

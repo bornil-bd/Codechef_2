@@ -52,7 +52,16 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a) ii(b)
+    ll sum=0;
+    ll pre=(a*(a+1))/2;
+    loop(i,0,b)
+    {
+        ii(x)
+        sum+=x;
+    }
+    //cout<<pre<<" "<<sum<<v;
+    cout<<pre-sum<<v;
     //cout<<"Case "<<tc<<": "<<
 }
 

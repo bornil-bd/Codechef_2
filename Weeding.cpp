@@ -52,7 +52,12 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ll a,b,c;
+    cin>>a>>b>>c;
+    vector<ll>vc;
+    invec(vc,a);
+    ll d=maxall(vc);
+    check((d+c-1)<=b);
     //cout<<"Case "<<tc<<": "<<
 }
 

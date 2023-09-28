@@ -52,15 +52,37 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
+    ii(a)
+    vector<string>str;
+    vector<string>ans;
+    loop(i,0,a)
+    {
+        string(S)
+        str.pb(S);
+    }
+    set<string>datas;
+    for(ll i=sz(str)-1; i>=0; i--)
+    {
+        string temp=str[i].substr(sz(str[i])-2,2);
+        if(datas.find(str[i])==datas.end())
+        {
+            ans.pb(temp);
+            datas.insert(str[i]);
+        }
+    }
+    for(auto i:ans)
+    {
+        cout<<i;
+    }
+    cout<<v;
     
-    //cout<<"Case "<<tc<<": "<<
 }
 
 int main()
 {
     fastio();
-    ll t;
-    cin>>t;
+    ll t=1;
+    //cin>>t;
     ll tc=0;
     while(t--)
     {

@@ -52,7 +52,29 @@ ll M=1000000007;
 
 void masud_valo_hoye_gele_problem_solve_hobe(ll tc)
 {
-    
+    ii(a) ii(b)
+    vll vc;
+    loop(i,0,a)
+    {
+        ii(c) ii(d)
+        loop(j,c,d)
+        {
+            vc.pb(j);
+        }
+    }
+    sort(all(vc));
+    //cout<<sz(vc)<<v;
+    loop(i,0,b)
+    {
+        ii(e)
+        ll xx=lowerb(vc,e);
+        if(xx==vc.size())
+        {
+            cout<<"-1"<<v;
+            continue;
+        }
+        cout<<vc[xx]-e<<v;
+    }
     //cout<<"Case "<<tc<<": "<<
 }
 
